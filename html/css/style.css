@@ -1,1 +1,259 @@
+html{
+    scroll-behavior: smooth;
+}
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ea;
+    color:#333;
+    transition: 0.3s;
+}
+
+header{
+    background-color: #3e2723;
+    padding: 20px;
+}
+
+h1{
+    color:#f4f1ea;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration: none;
+     border-radius: 20px;
+}
+
+
+.menu a:hover{
+    color:#d7ccc8;
+    border-radius: 20px;
+}
+
+.inicio{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inicio h2{
+    color: #5d4037;
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.inicio p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.imagens-site{
+    width: 120%;
+    max-width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+}
+
+.secao-generos{
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 20px 30px;
+}
+
+.secao-generos h2{
+    text-align: center;
+    font-size: 32px;
+    color: #3e2723;
+    margin-bottom: 40px;
+}
+
+.secao-generos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.secao-generos h2{
+    grid-column: 1 / -1;
+}
+
+.card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card h3{
+    color: #5d4037;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.secao-autores{
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 20px 30px;
+}
+
+.secao-autores h2{
+    text-align: center;
+    font-size: 32px;
+    color: #3e2723;
+    margin-bottom: 40px;
+}
+
+.autores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.autor{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.autor:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.autor h3{
+    color: #5d4037;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.autor p{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.secao-livros{
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 20px 30px;
+}
+
+.secao-livros h2{
+    text-align: center;
+    color: #3e2723;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.grid-livros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-livros > div hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.grid-livros .imagens-livros{
+    width: 100%;
+    max-width: 220px;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+    transition: opacity 0.3s ease;
+}
+
+.grid-livros figcaption{
+    color: #3e2723;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.grid-livros .imagens-livros:hover{
+    opacity: 0.7;
+}
+
+@media (max-width: 900px){
+      .menu ul {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    .inicio {
+        margin: 20px;
+
+        padding: 25px 15px;
+    }
+
+    .inicio h2 {
+        font-size: 28px;
+    }
+
+    .secao-generos {
+        grid-template-columns: 1fr;
+
+        margin: 40px auto;
+    }
+
+    .autores {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-livros {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-livros {
+        padding: 20px;
+    }
+
+}
